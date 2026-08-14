@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Local config
+local.properties
+
+# APK outputs
+*.apk
+*.aab
+
+# Signing keys (keep the dev key in sdk/keys for now)
+*.jks
+!sdk/keys/lightsdk-dev.jks
