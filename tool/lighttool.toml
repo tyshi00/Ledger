@@ -1,0 +1,7 @@
+[tool]
+id = "com.tyshi00.ledger"
+label = "Ledger"
+versionCode = 2
+versionName = "1.0.1"
+permissions = []
+serverPackage = "com.lightos"
