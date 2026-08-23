@@ -67,9 +67,9 @@ sealed interface LightServiceMethod<TRequest, TResponse> {
         @Serializable
         data class Response(
             // "😅😅😅😅😅😅" -> keyboard will parse out emoji code points
-            val emojisAsString: String?,
-            val displayVoice: Boolean,
-            val enableKeyAnimation: Boolean
+            val emojisAsString: String? = null,
+            val displayVoice: Boolean = false,
+            val enableKeyAnimation: Boolean = false
         )
     }
 
