@@ -176,6 +176,9 @@ class HomeScreen(sealedActivity: SealedLightActivity) :
                     }
 
                     LightBottomBar(items = listOf(
+                        LightBarButton.LightIcon(icon = LightIcons.SETTINGS, onClick = {
+                            navigateTo(screenFactory = { SettingsScreen(it, repo) }, resultCallback = { viewModel.reload() })
+                        }),
                         LightBarButton.LightIcon(icon = LightIcons.ADD, onClick = {
                             navigateTo(screenFactory = { AddEntryScreen(it, repo, state.year, state.month) }, resultCallback = { viewModel.reload() })
                         }),
@@ -184,9 +187,6 @@ class HomeScreen(sealedActivity: SealedLightActivity) :
                         }, contentDescription = "Select month"),
                         LightBarButton.LightIcon(icon = LightIcons.LIST, onClick = {
                             navigateTo(screenFactory = { HistoryScreen(it, repo, state.year, state.month, null) }, resultCallback = { viewModel.reload() })
-                        }),
-                        LightBarButton.LightIcon(icon = LightIcons.SETTINGS, onClick = {
-                            navigateTo(screenFactory = { SettingsScreen(it, repo) }, resultCallback = { viewModel.reload() })
                         }),
                     ))
                 }
