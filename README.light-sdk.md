@@ -1,4 +1,7 @@
 # light-sdk
+
+> Copy of the official Light SDK README. The links to `docs/` point to the Light SDK repository because this repo does not include that folder.
+
 or: a tool for building Tools
 
 ## tl;dr
@@ -13,14 +16,14 @@ Before you do, though, please be aware that **while we feel good about letting e
 The currently builds of LightOS in the wild are not yet ready to "play nice" with the tools built here. If you're someone who's already comfortable working with ADB to sideload APKs on your
 Light Phone III, you can totally do that with whatever you do here! But we're shooting to make these tools feel as seamless as the ones already available in LightOS, and that's going to take a bit more work. 
 We're hoping to have an update on that front later this month. In the meantime, the best way to start working is to use an Android emulator running our new [LightOS Emulator](sdk/emulator). The instructions for getting that up and running
-are [right here](docs/system_app).
+are [right here](https://github.com/lightphone/light-sdk/tree/main/docs/system_app).
 
 ## Quickstart
 
 ### Running your Tool
 **You can test your tool on any Android device or emulator**, but certain functionality (receiving push notifications, requesting special permissions) can only be tested with:
 A) Real Light Phone hardware running LightOS
-B) An Android emulator (on your computer) set up to run our LightOS emulator app as a _system app_ ([see advanced instructions](docs/system_app))
+B) An Android emulator (on your computer) set up to run our LightOS emulator app as a _system app_ ([see advanced instructions](https://github.com/lightphone/light-sdk/tree/main/docs/system_app))
 
 You can quickly [create an emulator](https://developer.android.com/studio/run/managing-avds) that generally feels like an LPIII by using the following settings:
 * 1080 X 1240, 3.92" display
@@ -49,4 +52,4 @@ Once we release a version of LightOS that supports community tools, users will h
 - **SDK-built tools**: This is a slightly more permissive choice. Phones with this option selected will install and launch any tool that was built and signed by Light. These don't require any manual approval by us (though we can block them in extreme cases). If a user wants to be able to install a tool that was shared locally or somewhere outside of Light's dashboard, but they still want to be confident that it will run well and integrate nicely with LightOS, they might choose this option!
 - **Any tools**: A user will have the option to make any APK launchable from LightOS, but they will own the responsibility of getting them un/installed. When a user selects this option, we will be warning them that they are potentially opening their device up to security risks, and in doing so will limit our ability to support them if something goes wrong.
 
-## [Complete Documentation](./docs)
+## [Complete Documentation](https://github.com/lightphone/light-sdk/tree/main/docs)
